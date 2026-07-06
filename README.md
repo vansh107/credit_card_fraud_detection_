@@ -52,7 +52,6 @@ python3 src/gdrive_setup/setup_dvc_remote.py  # Run a script to set up the DVC r
 dvc push  # Push dvc data changes to the Google drive or any other remote source like AWS (as set in the files)
 ```
 
-<img width="389" alt="image" src="https://github.com/user-attachments/assets/36c2dbdd-268d-4470-b003-a0ec20daafed" />
 
 
 Project Organization
