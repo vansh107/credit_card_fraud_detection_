@@ -1,0 +1,16 @@
+2025-03-26 20:14:45,201 - __main__ - INFO - Starting prediction pipeline
+2025-03-26 20:14:45,201 - __main__ - INFO - Best model from summary: RandomForest
+2025-03-26 20:14:45,201 - __main__ - INFO - Loading model from models/best_rf_model.pkl
+2025-03-26 20:14:45,352 - __main__ - INFO - Loaded RandomForest model
+2025-03-26 20:14:45,352 - __main__ - INFO - No test file provided, using processed data for demonstration
+2025-03-26 20:14:45,698 - __main__ - INFO - Making predictions on 74308 samples
+2025-03-26 20:14:46,782 - __main__ - INFO - Evaluating predictions
+2025-03-26 20:14:46,817 - __main__ - INFO - Accuracy: 0.7938
+2025-03-26 20:14:46,817 - __main__ - INFO - Precision: 0.0448
+2025-03-26 20:14:46,817 - __main__ - INFO - Recall: 0.6182
+2025-03-26 20:14:46,817 - __main__ - INFO - F1-Score: 0.0835
+2025-03-26 20:14:46,817 - __main__ - INFO - Confusion Matrix:
+[[58288 14891]
+ [  431   698]]
+2025-03-26 20:14:47,743 - __main__ - INFO - Predictions saved to data/predictions/fraud_predictions.csv
+2025-03-26 20:14:47,744 - __main__ - INFO - Prediction metrics saved to reports/prediction_metrics.json

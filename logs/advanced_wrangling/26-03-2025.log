@@ -1,0 +1,23 @@
+26-03-2025 18:14:28 - INFO : Starting advanced data processing pipeline
+26-03-2025 18:14:28 - INFO : Loading interim data
+26-03-2025 18:14:28 - INFO : Starting transaction analysis
+26-03-2025 18:14:30 - INFO : Reversed transactions analysis completed
+26-03-2025 18:14:30 - INFO : Transaction analysis saved successfully
+26-03-2025 18:14:30 - INFO : Multi-swipe transactions analysis completed
+26-03-2025 18:14:30 - INFO : Generating transaction visualizations
+26-03-2025 18:14:31 - INFO : Starting feature processing
+26-03-2025 18:14:33 - INFO : Special transactions removed successfully
+26-03-2025 18:14:37 - INFO : Missing values handled successfully
+26-03-2025 18:14:37 - INFO : Feature derivation completed successfully
+26-03-2025 18:14:37 - INFO : Feature processing report saved successfully
+26-03-2025 18:14:37 - INFO : Starting feature encoding
+26-03-2025 18:14:38 - INFO : Feature encoding completed successfully
+26-03-2025 18:14:38 - INFO : Starting feature scaling
+26-03-2025 18:14:38 - INFO : Feature scaling completed successfully
+26-03-2025 18:14:38 - INFO : Feature scaling report saved successfully
+26-03-2025 18:14:45 - INFO : Saved processed data to CSV: data/processed/processed_transactions.csv
+26-03-2025 18:14:46 - INFO : Saved processed data to HDF: data/processed/processed_transactions.h5
+26-03-2025 18:14:46 - INFO : Metrics saved to reports/advanced_wrangling_metrics.json
+26-03-2025 18:14:46 - INFO : Saved processing summary to reports/advanced_wrangling_summary.json
+26-03-2025 18:14:46 - INFO : Advanced processing pipeline completed successfully
+26-03-2025 18:14:46 - INFO : Advanced data processing pipeline finished

@@ -1,0 +1,185 @@
+2025-03-26 18:35:59,988 - __main__ - INFO - Starting model training pipeline
+2025-03-26 18:35:59,988 - __main__ - INFO - Loading processed data
+2025-03-26 18:36:00,473 - __main__ - INFO - Using 11679 samples for undersampling (equal to fraud class count)
+2025-03-26 18:36:00,714 - __main__ - INFO - Starting undersampling and RandomForest model training with 10 iterations
+2025-03-26 18:36:00,714 - __main__ - INFO - Iteration 1/10
+2025-03-26 18:36:00,715 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:36:00,778 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:38:10,510 - __main__ - INFO - Iteration 1 completed - F1 Score: 0.6436
+2025-03-26 18:38:10,510 - __main__ - INFO - Iteration 2/10
+2025-03-26 18:38:10,510 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:38:10,621 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:40:21,427 - __main__ - INFO - Iteration 2 completed - F1 Score: 0.6501
+2025-03-26 18:40:21,429 - __main__ - INFO - Iteration 3/10
+2025-03-26 18:40:21,429 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:40:21,519 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:42:29,928 - __main__ - INFO - Iteration 3 completed - F1 Score: 0.6333
+2025-03-26 18:42:29,928 - __main__ - INFO - Iteration 4/10
+2025-03-26 18:42:29,928 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:42:29,996 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:44:40,473 - __main__ - INFO - Iteration 4 completed - F1 Score: 0.6346
+2025-03-26 18:44:40,474 - __main__ - INFO - Iteration 5/10
+2025-03-26 18:44:40,474 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:44:40,565 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:46:50,705 - __main__ - INFO - Iteration 5 completed - F1 Score: 0.6412
+2025-03-26 18:46:50,707 - __main__ - INFO - Iteration 6/10
+2025-03-26 18:46:50,707 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:46:50,805 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:49:01,282 - __main__ - INFO - Iteration 6 completed - F1 Score: 0.644
+2025-03-26 18:49:01,284 - __main__ - INFO - Iteration 7/10
+2025-03-26 18:49:01,284 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:49:01,374 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:51:12,346 - __main__ - INFO - Iteration 7 completed - F1 Score: 0.6501
+2025-03-26 18:51:12,347 - __main__ - INFO - Iteration 8/10
+2025-03-26 18:51:12,347 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:51:12,443 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:53:23,651 - __main__ - INFO - Iteration 8 completed - F1 Score: 0.6438
+2025-03-26 18:53:23,652 - __main__ - INFO - Iteration 9/10
+2025-03-26 18:53:23,652 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:53:23,751 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:55:33,878 - __main__ - INFO - Iteration 9 completed - F1 Score: 0.6451
+2025-03-26 18:55:33,879 - __main__ - INFO - Iteration 10/10
+2025-03-26 18:55:33,880 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:55:33,965 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 18:57:42,425 - __main__ - INFO - Iteration 10 completed - F1 Score: 0.6367
+2025-03-26 18:57:42,427 - __main__ - INFO - Model Type: RandomForest
+2025-03-26 18:57:42,427 - __main__ - INFO - Average Accuracy: 0.7048
+2025-03-26 18:57:42,427 - __main__ - INFO - Average Fraud Precision: 0.6960
+2025-03-26 18:57:42,428 - __main__ - INFO - Average Fraud Recall: 0.5963
+2025-03-26 18:57:42,428 - __main__ - INFO - Average AUC: 0.7693
+2025-03-26 18:57:42,428 - __main__ - INFO - Average Fraud F1-score: 0.6423
+2025-03-26 18:57:42,428 - __main__ - INFO - F1 Scores: [0.6436, 0.6501, 0.6333, 0.6346, 0.6412, 0.644, 0.6501, 0.6438, 0.6451, 0.6367]
+2025-03-26 18:57:42,428 - __main__ - INFO - Max F1 Score: 0.6501
+2025-03-26 18:57:42,428 - __main__ - INFO - Starting undersampling and GradientBoosting model training with 10 iterations
+2025-03-26 18:57:42,428 - __main__ - INFO - Iteration 1/10
+2025-03-26 18:57:42,428 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 18:57:42,513 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:02:24,203 - __main__ - INFO - Iteration 1 completed - F1 Score: 0.662
+2025-03-26 19:02:24,205 - __main__ - INFO - Iteration 2/10
+2025-03-26 19:02:24,205 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:02:24,290 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:07:13,105 - __main__ - INFO - Iteration 2 completed - F1 Score: 0.6654
+2025-03-26 19:07:13,106 - __main__ - INFO - Iteration 3/10
+2025-03-26 19:07:13,106 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:07:13,196 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:12:02,319 - __main__ - INFO - Iteration 3 completed - F1 Score: 0.6609
+2025-03-26 19:12:02,322 - __main__ - INFO - Iteration 4/10
+2025-03-26 19:12:02,322 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:12:02,439 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:16:57,315 - __main__ - INFO - Iteration 4 completed - F1 Score: 0.6631
+2025-03-26 19:16:57,316 - __main__ - INFO - Iteration 5/10
+2025-03-26 19:16:57,316 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:16:57,424 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:21:43,906 - __main__ - INFO - Iteration 5 completed - F1 Score: 0.6652
+2025-03-26 19:21:43,907 - __main__ - INFO - Iteration 6/10
+2025-03-26 19:21:43,907 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:21:43,982 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:26:43,437 - __main__ - INFO - Iteration 6 completed - F1 Score: 0.6715
+2025-03-26 19:26:43,438 - __main__ - INFO - Iteration 7/10
+2025-03-26 19:26:43,438 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:26:43,532 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:31:28,711 - __main__ - INFO - Iteration 7 completed - F1 Score: 0.6577
+2025-03-26 19:31:28,717 - __main__ - INFO - Iteration 8/10
+2025-03-26 19:31:28,717 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:31:28,870 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:36:19,760 - __main__ - INFO - Iteration 8 completed - F1 Score: 0.6622
+2025-03-26 19:36:19,762 - __main__ - INFO - Iteration 9/10
+2025-03-26 19:36:19,763 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:36:19,924 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:41:15,639 - __main__ - INFO - Iteration 9 completed - F1 Score: 0.6683
+2025-03-26 19:41:15,642 - __main__ - INFO - Iteration 10/10
+2025-03-26 19:41:15,642 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:41:15,777 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:08,096 - __main__ - INFO - Iteration 10 completed - F1 Score: 0.6635
+2025-03-26 19:46:08,097 - __main__ - INFO - Model Type: GradientBoosting
+2025-03-26 19:46:08,097 - __main__ - INFO - Average Accuracy: 0.7129
+2025-03-26 19:46:08,097 - __main__ - INFO - Average Fraud Precision: 0.6919
+2025-03-26 19:46:08,097 - __main__ - INFO - Average Fraud Recall: 0.6383
+2025-03-26 19:46:08,097 - __main__ - INFO - Average AUC: 0.7808
+2025-03-26 19:46:08,097 - __main__ - INFO - Average Fraud F1-score: 0.6640
+2025-03-26 19:46:08,097 - __main__ - INFO - F1 Scores: [0.662, 0.6654, 0.6609, 0.6631, 0.6652, 0.6715, 0.6577, 0.6622, 0.6683, 0.6635]
+2025-03-26 19:46:08,097 - __main__ - INFO - Max F1 Score: 0.6715
+2025-03-26 19:46:08,098 - __main__ - INFO - Starting undersampling and XGBoost model training with 10 iterations
+2025-03-26 19:46:08,098 - __main__ - INFO - Iteration 1/10
+2025-03-26 19:46:08,098 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:08,249 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:15,420 - __main__ - INFO - Iteration 1 completed - F1 Score: 0.6642
+2025-03-26 19:46:15,420 - __main__ - INFO - Iteration 2/10
+2025-03-26 19:46:15,420 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:15,504 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:22,364 - __main__ - INFO - Iteration 2 completed - F1 Score: 0.6674
+2025-03-26 19:46:22,364 - __main__ - INFO - Iteration 3/10
+2025-03-26 19:46:22,364 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:22,398 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:29,674 - __main__ - INFO - Iteration 3 completed - F1 Score: 0.6661
+2025-03-26 19:46:29,674 - __main__ - INFO - Iteration 4/10
+2025-03-26 19:46:29,674 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:29,774 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:37,156 - __main__ - INFO - Iteration 4 completed - F1 Score: 0.6709
+2025-03-26 19:46:37,157 - __main__ - INFO - Iteration 5/10
+2025-03-26 19:46:37,157 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:37,240 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:44,469 - __main__ - INFO - Iteration 5 completed - F1 Score: 0.6728
+2025-03-26 19:46:44,471 - __main__ - INFO - Iteration 6/10
+2025-03-26 19:46:44,471 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:44,515 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:46:51,613 - __main__ - INFO - Iteration 6 completed - F1 Score: 0.6676
+2025-03-26 19:46:51,618 - __main__ - INFO - Iteration 7/10
+2025-03-26 19:46:51,618 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:46:51,722 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:47:00,470 - __main__ - INFO - Iteration 7 completed - F1 Score: 0.6654
+2025-03-26 19:47:00,471 - __main__ - INFO - Iteration 8/10
+2025-03-26 19:47:00,471 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:47:00,563 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:47:08,921 - __main__ - INFO - Iteration 8 completed - F1 Score: 0.6656
+2025-03-26 19:47:08,926 - __main__ - INFO - Iteration 9/10
+2025-03-26 19:47:08,926 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:47:09,012 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:47:16,793 - __main__ - INFO - Iteration 9 completed - F1 Score: 0.6637
+2025-03-26 19:47:16,794 - __main__ - INFO - Iteration 10/10
+2025-03-26 19:47:16,794 - __main__ - INFO - Performing undersampling with 11679 samples from majority class
+2025-03-26 19:47:16,868 - __main__ - INFO - Created balanced dataset with 21022 samples
+2025-03-26 19:47:24,744 - __main__ - INFO - Iteration 10 completed - F1 Score: 0.6635
+2025-03-26 19:47:24,745 - __main__ - INFO - Model Type: XGBoost
+2025-03-26 19:47:24,746 - __main__ - INFO - Average Accuracy: 0.7160
+2025-03-26 19:47:24,746 - __main__ - INFO - Average Fraud Precision: 0.6970
+2025-03-26 19:47:24,746 - __main__ - INFO - Average Fraud Recall: 0.6391
+2025-03-26 19:47:24,746 - __main__ - INFO - Average AUC: 0.7830
+2025-03-26 19:47:24,746 - __main__ - INFO - Average Fraud F1-score: 0.6667
+2025-03-26 19:47:24,746 - __main__ - INFO - F1 Scores: [0.6642, 0.6674, 0.6661, 0.6709, 0.6728, 0.6676, 0.6654, 0.6656, 0.6637, 0.6635]
+2025-03-26 19:47:24,746 - __main__ - INFO - Max F1 Score: 0.6728
+2025-03-26 19:47:36,630 - __main__ - INFO - Best RandomForest F1: 0.0836
+2025-03-26 19:47:36,632 - __main__ - INFO - Best GradientBoosting F1: 0.0825
+2025-03-26 19:47:36,632 - __main__ - INFO - Best XGBoost F1: 0.0828
+2025-03-26 19:47:36,701 - __main__ - INFO - Best models saved to models/ directory
+2025-03-26 19:47:39,152 - __main__ - INFO - Model: RandomForest
+2025-03-26 19:47:39,152 - __main__ - INFO - Accuracy: 0.7953
+2025-03-26 19:47:39,152 - __main__ - INFO - Precision: 0.0450
+2025-03-26 19:47:39,152 - __main__ - INFO - Recall: 0.5942
+2025-03-26 19:47:39,152 - __main__ - INFO - F1-Score: 0.0836
+2025-03-26 19:47:39,152 - __main__ - INFO - AUC: 0.7775
+2025-03-26 19:47:39,152 - __main__ - INFO - Confusion Matrix:
+[[116814  29467]
+ [   948   1388]]
+2025-03-26 19:47:40,519 - __main__ - INFO - Model: GradientBoosting
+2025-03-26 19:47:40,521 - __main__ - INFO - Accuracy: 0.7778
+2025-03-26 19:47:40,521 - __main__ - INFO - Precision: 0.0441
+2025-03-26 19:47:40,521 - __main__ - INFO - Recall: 0.6357
+2025-03-26 19:47:40,521 - __main__ - INFO - F1-Score: 0.0825
+2025-03-26 19:47:40,521 - __main__ - INFO - AUC: 0.7839
+2025-03-26 19:47:40,521 - __main__ - INFO - Confusion Matrix:
+[[114108  32173]
+ [   851   1485]]
+2025-03-26 19:47:41,028 - __main__ - INFO - Model: XGBoost
+2025-03-26 19:47:41,028 - __main__ - INFO - Accuracy: 0.7763
+2025-03-26 19:47:41,028 - __main__ - INFO - Precision: 0.0443
+2025-03-26 19:47:41,028 - __main__ - INFO - Recall: 0.6426
+2025-03-26 19:47:41,028 - __main__ - INFO - F1-Score: 0.0828
+2025-03-26 19:47:41,028 - __main__ - INFO - AUC: 0.7829
+2025-03-26 19:47:41,028 - __main__ - INFO - Confusion Matrix:
+[[113871  32410]
+ [   835   1501]]
+2025-03-26 19:47:41,234 - __main__ - INFO - Overall best model: RandomForest with F1 Score: 0.0836
+2025-03-26 19:47:41,235 - __main__ - INFO - Model metrics saved to reports/model_metrics.json
+2025-03-26 19:47:41,235 - __main__ - INFO - Model summary saved to reports/model_summary.json
+2025-03-26 19:47:41,235 - __main__ - INFO - Model training pipeline completed successfully

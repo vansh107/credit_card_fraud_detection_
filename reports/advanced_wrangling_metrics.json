@@ -1,0 +1,176 @@
+{
+    "processing_metrics": {
+        "transaction_analysis": {
+            "reversed_transactions": {
+                "count": 17768,
+                "total_amount": 2666966.4099999997,
+                "not_linked_count": 2535,
+                "not_linked_amount": 154826.09000000032,
+                "fraud_distribution": {
+                    "count": {
+                        "false": 17465,
+                        "true": 303
+                    },
+                    "sum": {
+                        "false": 2593673.52,
+                        "true": 73292.89
+                    },
+                    "mean": {
+                        "false": 148.5069292871457,
+                        "true": 241.89072607260726
+                    }
+                },
+                "timestamp": "2025-03-26 18:14:30"
+            },
+            "multi_swipe_transactions": {
+                "count": 7470,
+                "total_amount": 1104598.85,
+                "time_window_minutes": 5,
+                "time_difference_stats": {
+                    "count": 7470,
+                    "mean": "0 days 00:01:31.108701472",
+                    "std": "0 days 00:00:52.273250019",
+                    "min": "0 days 00:00:01",
+                    "25%": "0 days 00:00:46",
+                    "50%": "0 days 00:01:31",
+                    "75%": "0 days 00:02:17",
+                    "max": "0 days 00:04:36"
+                },
+                "top_merchants": {
+                    "Uber": 283,
+                    "Lyft": 227,
+                    "apple.com": 191,
+                    "gap.com": 179,
+                    "sears.com": 178
+                },
+                "timestamp": "2025-03-26 18:14:30"
+            }
+        },
+        "feature_processing": {
+            "removed_transactions": {
+                "initial_count": 786363,
+                "final_count": 743081,
+                "removed_count": 43282,
+                "removed_percentage": 5.504073818325633
+            },
+            "missing_values": {
+                "initial_missing": {
+                    "acqCountry": 4307,
+                    "merchantCountryCode": 689,
+                    "posEntryMode": 3841,
+                    "posConditionCode": 384,
+                    "transactionType": 698,
+                    "echoBuffer": 743081,
+                    "merchantCity": 743081,
+                    "merchantState": 743081,
+                    "merchantZip": 743081,
+                    "posOnPremises": 743081,
+                    "recurringAuthInd": 743081
+                },
+                "final_missing": 0,
+                "imputation_method": "mode_by_fraud_group_with_fallback"
+            },
+            "feature_engineering": {
+                "derived_features": [
+                    "CVV_matched"
+                ],
+                "dropped_columns": [
+                    "accountNumber",
+                    "customerId",
+                    "cardCVV",
+                    "enteredCVV",
+                    "cardLast4Digits",
+                    "transactionDateTime",
+                    "currentExpDate",
+                    "accountOpenDate",
+                    "dateOfLastAddressChange",
+                    "availableMoney"
+                ],
+                "final_column_count": 20
+            }
+        },
+        "feature_encoding": {
+            "encoding": {
+                "methods_used": {
+                    "acqCountry": "mean",
+                    "merchantCountryCode": "mean",
+                    "transactionType": "mean",
+                    "posEntryMode": "mean",
+                    "posConditionCode": "mean",
+                    "cardPresent": "binary",
+                    "expirationDateKeyInMatch": "binary",
+                    "isFraud": "binary",
+                    "merchantName": "frequency",
+                    "merchantCategoryCode": "frequency"
+                },
+                "encoded_features": [
+                    "acqCountry_encoded",
+                    "merchantCountryCode_encoded",
+                    "transactionType_encoded",
+                    "posEntryMode_encoded",
+                    "posConditionCode_encoded",
+                    "cardPresent_encoded",
+                    "expirationDateKeyInMatch_encoded",
+                    "isFraud_encoded",
+                    "merchantName_encoded",
+                    "merchantCategoryCode_encoded"
+                ],
+                "original_features_dropped": [
+                    "acqCountry",
+                    "merchantCountryCode",
+                    "transactionType",
+                    "posEntryMode",
+                    "posConditionCode",
+                    "cardPresent",
+                    "expirationDateKeyInMatch",
+                    "isFraud",
+                    "merchantName",
+                    "merchantCategoryCode"
+                ]
+            }
+        },
+        "feature_scaling": {
+            "scaling": {
+                "scaled_features": [
+                    "creditLimit",
+                    "transactionAmount",
+                    "currentBalance"
+                ],
+                "scaling_method": "minmax",
+                "scale_range": [
+                    0,
+                    1
+                ]
+            }
+        }
+    },
+    "analysis_metrics": {
+        "final_shape": [
+            743081,
+            20
+        ],
+        "final_columns": [
+            "creditLimit",
+            "transactionAmount",
+            "echoBuffer",
+            "currentBalance",
+            "merchantCity",
+            "merchantState",
+            "merchantZip",
+            "posOnPremises",
+            "recurringAuthInd",
+            "CVV_matched",
+            "acqCountry_encoded",
+            "merchantCountryCode_encoded",
+            "transactionType_encoded",
+            "posEntryMode_encoded",
+            "posConditionCode_encoded",
+            "cardPresent_encoded",
+            "expirationDateKeyInMatch_encoded",
+            "isFraud_encoded",
+            "merchantName_encoded",
+            "merchantCategoryCode_encoded"
+        ],
+        "processing_timestamp": "2025-03-26 18:14:46"
+    }
+}

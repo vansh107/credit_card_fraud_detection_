@@ -1,0 +1,30 @@
+2025-03-27 08:19:24,972 - __main__ - INFO - Starting prediction pipeline
+2025-03-27 08:19:24,972 - __main__ - INFO - Best model from summary: GradientBoosting
+2025-03-27 08:19:24,972 - __main__ - INFO - Loading model from models/best_gb_model.pkl
+2025-03-27 08:19:25,161 - __main__ - INFO - Loaded GradientBoosting model
+2025-03-27 08:19:25,161 - __main__ - INFO - Loading saved balanced test set from data/evaluation/balanced_test_set.csv
+2025-03-27 08:19:25,177 - __main__ - INFO - Making predictions on 4672 samples
+2025-03-27 08:19:25,209 - __main__ - INFO - Evaluating predictions
+2025-03-27 08:19:25,218 - __main__ - INFO - Accuracy: 0.7697
+2025-03-27 08:19:25,218 - __main__ - INFO - Precision: 0.7381
+2025-03-27 08:19:25,218 - __main__ - INFO - Recall: 0.8360
+2025-03-27 08:19:25,218 - __main__ - INFO - F1-Score: 0.7840
+2025-03-27 08:19:25,218 - __main__ - INFO - AUC: 0.8438
+2025-03-27 08:19:25,218 - __main__ - INFO - Confusion Matrix:
+[[1643  693]
+ [ 383 1953]]
+2025-03-27 08:19:25,740 - __main__ - INFO - Completed evaluation on saved balanced test set
+2025-03-27 08:19:25,741 - __main__ - INFO - Balanced prediction metrics saved to reports/balanced_prediction_metrics.json
+2025-03-27 08:19:25,741 - __main__ - INFO - No test file provided, using processed data for demonstration
+2025-03-27 08:19:26,148 - __main__ - INFO - Making predictions on 74308 samples
+2025-03-27 08:19:26,639 - __main__ - INFO - Evaluating predictions
+2025-03-27 08:19:26,686 - __main__ - INFO - Accuracy: 0.7066
+2025-03-27 08:19:26,687 - __main__ - INFO - Precision: 0.0416
+2025-03-27 08:19:26,687 - __main__ - INFO - Recall: 0.8317
+2025-03-27 08:19:26,687 - __main__ - INFO - F1-Score: 0.0793
+2025-03-27 08:19:26,687 - __main__ - INFO - AUC: 0.8462
+2025-03-27 08:19:26,687 - __main__ - INFO - Confusion Matrix:
+[[51564 21615]
+ [  190   939]]
+2025-03-27 08:19:27,736 - __main__ - INFO - Predictions saved to data/predictions/fraud_predictions.csv
+2025-03-27 08:19:27,737 - __main__ - INFO - Prediction metrics saved to reports/prediction_metrics.json

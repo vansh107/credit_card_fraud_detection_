@@ -1,0 +1,231 @@
+schema: '2.0'
+stages:
+  extract_data:
+    cmd: python3 src/data/data_collection.py
+    deps:
+    - path: data/raw/zipped/transactions.zip
+      hash: md5
+      md5: 3e92ff602647ef6130867b433a410316
+      size: 30522086
+    - path: src/data/data_collection.py
+      hash: md5
+      md5: fc38a66e155702b1ac3ffcb1aba678ea
+      size: 1400
+    outs:
+    - path: data/raw/extracted/
+      hash: md5
+      md5: 157f6021c8e5607288368a8b8a44341b.dir
+      size: 609937737
+      nfiles: 1
+  data_processing:
+    cmd: python3 src/data/data_processing.py
+    deps:
+    - path: data/raw/extracted/transactions.txt
+      hash: md5
+      md5: 00ae682514a9351e13a92c2da4343e3e
+      size: 609937737
+    - path: src/data/data_processing.py
+      hash: md5
+      md5: bf72409e499941c3db7e23eb1cdd847f
+      size: 15686
+    outs:
+    - path: data/inprogress/interim_transactions.csv
+      hash: md5
+      md5: 74f5c48e91397ba42830970547e3983c
+      size: 144399496
+    - path: data/inprogress/interim_transactions.h5
+      hash: md5
+      md5: 965492dcd18381944891ed85a4dd8f58
+      size: 177546777
+    - path: reports/data_exploration.txt
+      hash: md5
+      md5: 889f4e5597bfbb710bb1a4e657b64041
+      size: 17504
+    - path: reports/data_processing_metrics.json
+      hash: md5
+      md5: d2531c0c026c15cb72deb3b3de1b0813
+      size: 3729
+    - path: reports/preprocess_n_analysis.txt
+      hash: md5
+      md5: 611a5391fdb0548f808a4c463118a688
+      size: 2182
+    - path: reports/processing_summary.json
+      hash: md5
+      md5: b7464a4a06c6102473a372f0cc00a894
+      size: 325
+  advanced_wrangling:
+    cmd: python3 src/data-wrangling-advance/adv_data_processing.py
+    deps:
+    - path: data/inprogress/interim_transactions.h5
+      hash: md5
+      md5: 965492dcd18381944891ed85a4dd8f58
+      size: 177546777
+    - path: src/data-wrangling-advance/adv_data_processing.py
+      hash: md5
+      md5: 419b4eb3aab3c15ef4e401abf9ea70dc
+      size: 33415
+    outs:
+    - path: data/processed/processed_transactions.csv
+      hash: md5
+      md5: 6f7d8acde06b563ac7ea7e8bd4aa5de8
+      size: 173398800
+    - path: data/processed/processed_transactions.h5
+      hash: md5
+      md5: d1757be2ea6f3cf80aa50888d508ab61
+      size: 124846896
+    - path: reports/advanced_data_exploration.txt
+      hash: md5
+      md5: 75090ef0f1b75e732125240a221cf397
+      size: 2535
+    - path: reports/advanced_feature_analysis.txt
+      hash: md5
+      md5: 1201ba47cadb9de7d1f1239435724237
+      size: 2012
+    - path: reports/advanced_wrangling_metrics.json
+      hash: md5
+      md5: fd6f96fc579c8ca3aaa7a0ae841ff4c5
+      size: 6176
+    - path: reports/advanced_wrangling_summary.json
+      hash: md5
+      md5: 792dd8a05072029ccc06ab64ee27b70b
+      size: 368
+    - path: reports/figures/transaction_distributions.png
+      hash: md5
+      md5: 7e2987249c8ae35a8f1ff0d6247590a8
+      size: 35844
+  train_model:
+    cmd: python3 src/models/train_model.py
+    deps:
+    - path: data/processed/processed_transactions.h5
+      hash: md5
+      md5: d1757be2ea6f3cf80aa50888d508ab61
+      size: 124846896
+    - path: src/models/train_model.py
+      hash: md5
+      md5: 11b127978f6367ecd75add6beae12f17
+      size: 16977
+    outs:
+    - path: data/evaluation/balanced_test_set.csv
+      hash: md5
+      md5: 9638387ccb11a465f666f91b80f2300a
+      size: 1090396
+    - path: models/best_gb_model.pkl
+      hash: md5
+      md5: 007efb5c8a9e29f88721d387c07398a1
+      size: 3227673
+    - path: models/best_rf_model.pkl
+      hash: md5
+      md5: a163e52eea63aeac35ab359b1dbc8d04
+      size: 3278377
+    - path: models/best_xgb_model.pkl
+      hash: md5
+      md5: 61587bf90ed837edd55ad890afcd52fd
+      size: 1015563
+    - path: reports/figures/confusion_matrix_GradientBoosting.png
+      hash: md5
+      md5: a53c5e08a8c556fda3c2f9b3b6487774
+      size: 24311
+    - path: reports/figures/confusion_matrix_RandomForest.png
+      hash: md5
+      md5: 42cb06ea25619405b1fa10f6fff1b6de
+      size: 21866
+    - path: reports/figures/confusion_matrix_XGBoost.png
+      hash: md5
+      md5: a6a943ee4d6cd199ea07ef82c495f991
+      size: 22688
+    - path: reports/figures/precision_recall_curve_GradientBoosting.png
+      hash: md5
+      md5: 94fafe837e9b337450c40ba2d4fa8a3f
+      size: 30073
+    - path: reports/figures/precision_recall_curve_RandomForest.png
+      hash: md5
+      md5: 1618a5d0b1d0fe416e364f1888ec004b
+      size: 31269
+    - path: reports/figures/precision_recall_curve_XGBoost.png
+      hash: md5
+      md5: 6cd8d903bf085e1ef23f92eb845cdb80
+      size: 28651
+    - path: reports/figures/roc_curve_GradientBoosting.png
+      hash: md5
+      md5: ba44eb7ec9b9c8fdbffe695cb48869cc
+      size: 39784
+    - path: reports/figures/roc_curve_RandomForest.png
+      hash: md5
+      md5: 221bc2d64ba7c662c9e1db2f8ccbf676
+      size: 39247
+    - path: reports/figures/roc_curve_XGBoost.png
+      hash: md5
+      md5: c9a48e0cf6ff315a57007962f7818942
+      size: 38703
+    - path: reports/model_metrics.json
+      hash: md5
+      md5: 90cdc02f2d701dfc3237fcc929ed17ef
+      size: 4303
+    - path: reports/model_summary.json
+      hash: md5
+      md5: fd08f1bd19c0f09959374d81a2573fb0
+      size: 634
+  predict:
+    cmd: python3 src/models/predict_model.py
+    deps:
+    - path: data/evaluation/balanced_test_set.csv
+      hash: md5
+      md5: 9638387ccb11a465f666f91b80f2300a
+      size: 1090396
+    - path: models/best_gb_model.pkl
+      hash: md5
+      md5: 007efb5c8a9e29f88721d387c07398a1
+      size: 3227673
+    - path: models/best_rf_model.pkl
+      hash: md5
+      md5: a163e52eea63aeac35ab359b1dbc8d04
+      size: 3278377
+    - path: models/best_xgb_model.pkl
+      hash: md5
+      md5: 61587bf90ed837edd55ad890afcd52fd
+      size: 1015563
+    - path: reports/model_summary.json
+      hash: md5
+      md5: fd08f1bd19c0f09959374d81a2573fb0
+      size: 634
+    - path: src/models/predict_model.py
+      hash: md5
+      md5: cb7d6c5784bf106b51a061ff15fff0c1
+      size: 16508
+    outs:
+    - path: data/predictions/fraud_predictions.csv
+      hash: md5
+      md5: b2865b2180bef139b400e3c7ac37639c
+      size: 18786649
+    - path: reports/balanced_prediction_metrics.json
+      hash: md5
+      md5: 7f01867fa30b83d531432dafbeb4307c
+      size: 1353
+    - path: reports/figures/balanced_prediction/prediction_confusion_matrix.png
+      hash: md5
+      md5: 224a948477217038c9a2841d7b7e554c
+      size: 25243
+    - path: reports/figures/balanced_prediction/prediction_pr_curve.png
+      hash: md5
+      md5: e4578b007c247933c13212d28fdc0412
+      size: 28260
+    - path: reports/figures/balanced_prediction/prediction_roc_curve.png
+      hash: md5
+      md5: e530f11dcebfd28c2cfec546d5e84447
+      size: 37981
+    - path: reports/figures/prediction/prediction_confusion_matrix.png
+      hash: md5
+      md5: e61f42d4ed3b1d70bf45a5c5b24dddd0
+      size: 24374
+    - path: reports/figures/prediction/prediction_pr_curve.png
+      hash: md5
+      md5: 875fc476783cbab8763e42a720e927ff
+      size: 22266
+    - path: reports/figures/prediction/prediction_roc_curve.png
+      hash: md5
+      md5: 42d89dae0bf4f2722e0bff145b6f8eab
+      size: 37305
+    - path: reports/prediction_metrics.json
+      hash: md5
+      md5: 779e7055076c73fd14ef0af158e8ecdb
+      size: 1389

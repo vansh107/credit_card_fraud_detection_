@@ -1,0 +1,46 @@
+02-11-2024 11:25:57 - INFO : Successfully loaded data from data/raw/extracted/transactions.txt
+02-11-2024 11:25:57 - INFO : Data processing completed successfully
+02-11-2024 11:26:01 - INFO : Processed data saved to data/inprogress/inprogress_transactions.csv
+02-11-2024 11:26:02 - INFO : Data analysis completed successfully
+02-11-2024 11:26:02 - INFO : Metrics saved to reports/data_processing_metrics.json
+02-11-2024 11:26:02 - INFO : Main processing pipeline completed successfully
+02-11-2024 12:33:13 - INFO : Starting data processing pipeline
+02-11-2024 12:33:13 - INFO : Loading raw data
+02-11-2024 12:33:19 - INFO : Successfully loaded data from data/raw/extracted/transactions.txt
+02-11-2024 12:33:19 - INFO : Starting data processing
+02-11-2024 12:33:19 - INFO : Data processing completed successfully
+02-11-2024 12:33:19 - INFO : Starting data analysis
+02-11-2024 12:33:25 - INFO : Data exploration text saved successfully
+02-11-2024 12:33:25 - INFO : Data analysis completed successfully
+02-11-2024 12:33:30 - INFO : Saved basic processed data to CSV: data/inprogress/interim_transactions.csv
+02-11-2024 12:33:30 - ERROR : Error in main processing pipeline: Missing optional dependency 'pytables'.  Use pip or conda to install pytables.
+02-11-2024 12:33:30 - INFO : Basic Data processing pipeline finished
+02-11-2024 12:42:54 - INFO : Starting data processing pipeline
+02-11-2024 12:42:54 - INFO : Loading raw data
+02-11-2024 12:43:00 - INFO : Successfully loaded data from data/raw/extracted/transactions.txt
+02-11-2024 12:43:00 - INFO : Starting data processing
+02-11-2024 12:43:00 - INFO : Data processing completed successfully
+02-11-2024 12:43:00 - INFO : Starting data analysis
+02-11-2024 12:43:05 - INFO : Data exploration text saved successfully
+02-11-2024 12:43:06 - INFO : Data analysis completed successfully
+02-11-2024 12:43:10 - INFO : Saved basic processed data to CSV: data/inprogress/interim_transactions.csv
+02-11-2024 12:43:14 - INFO : Saved basic processed data to HDF: data/inprogress/interim_transactions.h5
+02-11-2024 12:43:14 - INFO : Metrics saved to reports/data_processing_metrics.json
+02-11-2024 12:43:14 - INFO : Saved metrics to reports/data_processing_metrics.json
+02-11-2024 12:43:15 - ERROR : Error in main processing pipeline: keys must be str, int, float, bool or None, not Float64DType
+02-11-2024 12:43:15 - INFO : Basic Data processing pipeline finished
+02-11-2024 12:46:33 - INFO : Starting data processing pipeline
+02-11-2024 12:46:33 - INFO : Loading raw data
+02-11-2024 12:46:40 - INFO : Successfully loaded data from data/raw/extracted/transactions.txt
+02-11-2024 12:46:40 - INFO : Starting data processing
+02-11-2024 12:46:40 - INFO : Data processing completed successfully
+02-11-2024 12:46:40 - INFO : Starting data analysis
+02-11-2024 12:46:45 - INFO : Data exploration text saved successfully
+02-11-2024 12:46:46 - INFO : Data analysis completed successfully
+02-11-2024 12:46:50 - INFO : Saved basic processed data to CSV: data/inprogress/interim_transactions.csv
+02-11-2024 12:46:52 - INFO : Saved basic processed data to HDF: data/inprogress/interim_transactions.h5
+02-11-2024 12:46:52 - INFO : Metrics saved to reports/data_processing_metrics.json
+02-11-2024 12:46:52 - INFO : Saved metrics to reports/data_processing_metrics.json
+02-11-2024 12:46:53 - INFO : Saved processing summary to reports/processing_summary.json
+02-11-2024 12:46:53 - INFO : Main processing pipeline completed successfully
+02-11-2024 12:46:53 - INFO : Basic Data processing pipeline finished

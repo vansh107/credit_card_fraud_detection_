@@ -1,0 +1,15 @@
+10-11-2024 09:43:59 - INFO : Starting data processing pipeline
+10-11-2024 09:43:59 - INFO : Loading raw data
+10-11-2024 09:44:05 - INFO : Successfully loaded data from data/raw/extracted/transactions.txt
+10-11-2024 09:44:05 - INFO : Starting data processing
+10-11-2024 09:44:05 - INFO : Data processing completed successfully
+10-11-2024 09:44:05 - INFO : Starting data analysis
+10-11-2024 09:44:11 - INFO : Data exploration text saved successfully
+10-11-2024 09:44:11 - INFO : Data analysis completed successfully
+10-11-2024 09:44:17 - INFO : Saved basic processed data to CSV: data/inprogress/interim_transactions.csv
+10-11-2024 09:44:21 - INFO : Saved basic processed data to HDF: data/inprogress/interim_transactions.h5
+10-11-2024 09:44:21 - INFO : Metrics saved to reports/data_processing_metrics.json
+10-11-2024 09:44:21 - INFO : Saved metrics to reports/data_processing_metrics.json
+10-11-2024 09:44:22 - INFO : Saved processing summary to reports/processing_summary.json
+10-11-2024 09:44:22 - INFO : Main processing pipeline completed successfully
+10-11-2024 09:44:22 - INFO : Basic Data processing pipeline finished

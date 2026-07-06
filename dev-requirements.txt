@@ -1,0 +1,8 @@
+black
+black[jupyter]
+flake8
+isort
+nbstripout
+pytest
+pytest-timeout
+versioneer

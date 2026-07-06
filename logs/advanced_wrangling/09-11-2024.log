@@ -1,0 +1,137 @@
+09-11-2024 19:43:06 - INFO : Starting advanced data processing pipeline
+09-11-2024 19:43:06 - INFO : Loading interim data
+09-11-2024 19:43:09 - INFO : Starting transaction analysis
+09-11-2024 19:43:10 - INFO : Reversed transactions analysis completed
+09-11-2024 19:43:11 - INFO : Transaction analysis saved successfully
+09-11-2024 19:43:11 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 19:43:11 - INFO : Generating transaction visualizations
+09-11-2024 19:43:12 - INFO : Starting feature processing
+09-11-2024 19:43:14 - ERROR : Error removing special transactions: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+09-11-2024 19:43:14 - ERROR : Error in advanced processing pipeline: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+09-11-2024 19:43:14 - INFO : Advanced data processing pipeline finished
+09-11-2024 19:47:03 - INFO : Starting advanced data processing pipeline
+09-11-2024 19:47:03 - INFO : Loading interim data
+09-11-2024 19:47:04 - INFO : Starting transaction analysis
+09-11-2024 19:47:05 - INFO : Reversed transactions analysis completed
+09-11-2024 19:47:05 - INFO : Transaction analysis saved successfully
+09-11-2024 19:47:05 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 19:47:05 - INFO : Generating transaction visualizations
+09-11-2024 19:47:06 - INFO : Starting feature processing
+09-11-2024 19:47:08 - INFO : Special transactions removed successfully
+09-11-2024 19:47:09 - ERROR : Error handling missing values: 0
+09-11-2024 19:47:09 - ERROR : Error in advanced processing pipeline: 0
+09-11-2024 19:47:09 - INFO : Advanced data processing pipeline finished
+09-11-2024 19:49:51 - INFO : Starting advanced data processing pipeline
+09-11-2024 19:49:51 - INFO : Loading interim data
+09-11-2024 19:49:51 - INFO : Starting transaction analysis
+09-11-2024 19:49:53 - INFO : Reversed transactions analysis completed
+09-11-2024 19:49:53 - INFO : Transaction analysis saved successfully
+09-11-2024 19:49:53 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 19:49:53 - INFO : Generating transaction visualizations
+09-11-2024 19:49:54 - INFO : Starting feature processing
+09-11-2024 19:49:56 - INFO : Special transactions removed successfully
+09-11-2024 19:49:57 - ERROR : Error handling missing values: 0
+09-11-2024 19:49:57 - ERROR : Error in advanced processing pipeline: 0
+09-11-2024 19:49:57 - INFO : Advanced data processing pipeline finished
+09-11-2024 19:52:44 - INFO : Starting advanced data processing pipeline
+09-11-2024 19:52:44 - INFO : Loading interim data
+09-11-2024 19:52:45 - INFO : Starting transaction analysis
+09-11-2024 19:52:46 - INFO : Reversed transactions analysis completed
+09-11-2024 19:52:47 - INFO : Transaction analysis saved successfully
+09-11-2024 19:52:47 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 19:52:47 - INFO : Generating transaction visualizations
+09-11-2024 19:52:47 - INFO : Starting feature processing
+09-11-2024 19:52:49 - INFO : Special transactions removed successfully
+09-11-2024 19:52:50 - ERROR : Error handling missing values: Must specify a fill 'value' or 'method'.
+09-11-2024 19:52:50 - ERROR : Error in advanced processing pipeline: Must specify a fill 'value' or 'method'.
+09-11-2024 19:52:50 - INFO : Advanced data processing pipeline finished
+09-11-2024 19:54:33 - INFO : Starting advanced data processing pipeline
+09-11-2024 19:54:33 - INFO : Loading interim data
+09-11-2024 19:54:34 - INFO : Starting transaction analysis
+09-11-2024 19:54:35 - INFO : Reversed transactions analysis completed
+09-11-2024 19:54:36 - INFO : Transaction analysis saved successfully
+09-11-2024 19:54:36 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 19:54:36 - INFO : Generating transaction visualizations
+09-11-2024 19:54:36 - INFO : Starting feature processing
+09-11-2024 19:54:38 - INFO : Special transactions removed successfully
+09-11-2024 19:54:42 - INFO : Missing values handled successfully
+09-11-2024 19:54:42 - INFO : Feature derivation completed successfully
+09-11-2024 19:54:42 - INFO : Feature processing report saved successfully
+09-11-2024 19:54:42 - INFO : Starting feature encoding
+09-11-2024 19:54:43 - INFO : Feature encoding completed successfully
+09-11-2024 19:54:43 - INFO : Starting feature scaling
+09-11-2024 19:54:43 - INFO : Feature scaling completed successfully
+09-11-2024 19:54:43 - INFO : Feature scaling report saved successfully
+09-11-2024 19:54:49 - INFO : Saved processed data to CSV: data/processed/processed_transactions.csv
+09-11-2024 19:54:49 - INFO : Saved processed data to HDF: data/processed/processed_transactions.h5
+09-11-2024 19:54:49 - ERROR : Error saving metrics: Object of type Timedelta is not JSON serializable
+09-11-2024 19:54:49 - ERROR : Error in advanced processing pipeline: Object of type Timedelta is not JSON serializable
+09-11-2024 19:54:49 - INFO : Advanced data processing pipeline finished
+09-11-2024 20:03:51 - INFO : Starting advanced data processing pipeline
+09-11-2024 20:03:51 - INFO : Loading interim data
+09-11-2024 20:03:52 - INFO : Starting transaction analysis
+09-11-2024 20:03:53 - INFO : Reversed transactions analysis completed
+09-11-2024 20:03:54 - INFO : Transaction analysis saved successfully
+09-11-2024 20:03:54 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 20:03:54 - INFO : Generating transaction visualizations
+09-11-2024 20:03:54 - INFO : Starting feature processing
+09-11-2024 20:03:56 - INFO : Special transactions removed successfully
+09-11-2024 20:03:59 - INFO : Missing values handled successfully
+09-11-2024 20:04:00 - INFO : Feature derivation completed successfully
+09-11-2024 20:04:00 - INFO : Feature processing report saved successfully
+09-11-2024 20:04:00 - INFO : Starting feature encoding
+09-11-2024 20:04:00 - INFO : Feature encoding completed successfully
+09-11-2024 20:04:00 - INFO : Starting feature scaling
+09-11-2024 20:04:00 - INFO : Feature scaling completed successfully
+09-11-2024 20:04:00 - INFO : Feature scaling report saved successfully
+09-11-2024 20:04:06 - INFO : Saved processed data to CSV: data/processed/processed_transactions.csv
+09-11-2024 20:04:06 - INFO : Saved processed data to HDF: data/processed/processed_transactions.h5
+09-11-2024 20:04:06 - ERROR : Error saving metrics: Object of type int64 is not JSON serializable
+09-11-2024 20:04:06 - ERROR : Error in advanced processing pipeline: Object of type int64 is not JSON serializable
+09-11-2024 20:04:06 - INFO : Advanced data processing pipeline finished
+09-11-2024 20:07:10 - INFO : Starting advanced data processing pipeline
+09-11-2024 20:07:10 - INFO : Loading interim data
+09-11-2024 20:07:11 - INFO : Starting transaction analysis
+09-11-2024 20:07:12 - INFO : Reversed transactions analysis completed
+09-11-2024 20:07:13 - INFO : Transaction analysis saved successfully
+09-11-2024 20:07:13 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 20:07:13 - INFO : Generating transaction visualizations
+09-11-2024 20:07:13 - INFO : Starting feature processing
+09-11-2024 20:07:15 - INFO : Special transactions removed successfully
+09-11-2024 20:07:18 - INFO : Missing values handled successfully
+09-11-2024 20:07:19 - INFO : Feature derivation completed successfully
+09-11-2024 20:07:19 - INFO : Feature processing report saved successfully
+09-11-2024 20:07:19 - INFO : Starting feature encoding
+09-11-2024 20:07:19 - INFO : Feature encoding completed successfully
+09-11-2024 20:07:19 - INFO : Starting feature scaling
+09-11-2024 20:07:19 - INFO : Feature scaling completed successfully
+09-11-2024 20:07:19 - INFO : Feature scaling report saved successfully
+09-11-2024 20:07:25 - INFO : Saved processed data to CSV: data/processed/processed_transactions.csv
+09-11-2024 20:07:25 - INFO : Saved processed data to HDF: data/processed/processed_transactions.h5
+09-11-2024 20:07:25 - INFO : Metrics saved to reports/advanced_wrangling_metrics.json
+09-11-2024 20:07:25 - INFO : Saved processing summary to reports/advanced_wrangling_summary.json
+09-11-2024 20:07:25 - INFO : Advanced processing pipeline completed successfully
+09-11-2024 20:07:25 - INFO : Advanced data processing pipeline finished
+09-11-2024 20:08:19 - INFO : Starting advanced data processing pipeline
+09-11-2024 20:08:19 - INFO : Loading interim data
+09-11-2024 20:08:20 - INFO : Starting transaction analysis
+09-11-2024 20:08:22 - INFO : Reversed transactions analysis completed
+09-11-2024 20:08:22 - INFO : Transaction analysis saved successfully
+09-11-2024 20:08:22 - INFO : Multi-swipe transactions analysis completed
+09-11-2024 20:08:22 - INFO : Generating transaction visualizations
+09-11-2024 20:08:23 - INFO : Starting feature processing
+09-11-2024 20:08:25 - INFO : Special transactions removed successfully
+09-11-2024 20:08:28 - INFO : Missing values handled successfully
+09-11-2024 20:08:28 - INFO : Feature derivation completed successfully
+09-11-2024 20:08:28 - INFO : Feature processing report saved successfully
+09-11-2024 20:08:28 - INFO : Starting feature encoding
+09-11-2024 20:08:29 - INFO : Feature encoding completed successfully
+09-11-2024 20:08:29 - INFO : Starting feature scaling
+09-11-2024 20:08:29 - INFO : Feature scaling completed successfully
+09-11-2024 20:08:29 - INFO : Feature scaling report saved successfully
+09-11-2024 20:08:35 - INFO : Saved processed data to CSV: data/processed/processed_transactions.csv
+09-11-2024 20:08:35 - INFO : Saved processed data to HDF: data/processed/processed_transactions.h5
+09-11-2024 20:08:35 - INFO : Metrics saved to reports/advanced_wrangling_metrics.json
+09-11-2024 20:08:35 - INFO : Saved processing summary to reports/advanced_wrangling_summary.json
+09-11-2024 20:08:35 - INFO : Advanced processing pipeline completed successfully
+09-11-2024 20:08:35 - INFO : Advanced data processing pipeline finished

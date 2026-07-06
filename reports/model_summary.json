@@ -1,0 +1,22 @@
+{
+    "best_model": "GradientBoosting",
+    "best_model_f1": 0.7840224809313528,
+    "model_comparison": {
+        "RandomForest": {
+            "f1": 0.7197965239508266,
+            "precision": 0.7128463476070529,
+            "recall": 0.7268835616438356
+        },
+        "GradientBoosting": {
+            "f1": 0.7840224809313528,
+            "precision": 0.7380952380952381,
+            "recall": 0.8360445205479452
+        },
+        "XGBoost": {
+            "f1": 0.7578990562166599,
+            "precision": 0.7277383766745469,
+            "recall": 0.790667808219178
+        }
+    },
+    "timestamp": "2025-03-27 07:55:58"
+}

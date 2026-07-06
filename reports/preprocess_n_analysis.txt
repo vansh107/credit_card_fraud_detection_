@@ -1,0 +1,71 @@
+DATA PREPROCESSING AND ANALYSIS STEPS
+==================================================
+
+Timestamp: 2025-03-26 18:13:57
+--------------------------------------------------
+
+1. Basic Data Cleaning:
+   - Replaced blank cells and only empty spaces with NaN values
+
+2. DateTime Conversions:
+   - Converted transactionDateTime to datetime using standard format
+   - Converted currentExpDate to datetime using format '%m/%Y'
+   - Converted accountOpenDate to datetime using standard format
+   - Converted dateOfLastAddressChange to datetime using standard format
+
+3. Final Data Types:
+   - accountNumber: int64
+   - customerId: int64
+   - creditLimit: int64
+   - availableMoney: float64
+   - transactionDateTime: datetime64[ns]
+   - transactionAmount: float64
+   - merchantName: object
+   - acqCountry: object
+   - merchantCountryCode: object
+   - posEntryMode: object
+   - posConditionCode: object
+   - merchantCategoryCode: object
+   - currentExpDate: datetime64[ns]
+   - accountOpenDate: datetime64[ns]
+   - dateOfLastAddressChange: datetime64[ns]
+   - cardCVV: int64
+   - enteredCVV: int64
+   - cardLast4Digits: int64
+   - transactionType: object
+   - echoBuffer: float64
+   - currentBalance: float64
+   - merchantCity: float64
+   - merchantState: float64
+   - merchantZip: float64
+   - cardPresent: bool
+   - posOnPremises: float64
+   - recurringAuthInd: float64
+   - expirationDateKeyInMatch: bool
+   - isFraud: bool
+
+4. Data Brief Generation:
+   - Generated comprehensive data summary
+   - Analyzed column types and unique values
+
+5. Missing Data Analysis:
+   Columns with missing values:
+   - acqCountry: 0.58% missing
+   - merchantCountryCode: 0.09% missing
+   - posEntryMode: 0.52% missing
+   - posConditionCode: 0.05% missing
+   - transactionType: 0.09% missing
+   - echoBuffer: 100.00% missing
+   - merchantCity: 100.00% missing
+   - merchantState: 100.00% missing
+   - merchantZip: 100.00% missing
+   - posOnPremises: 100.00% missing
+   - recurringAuthInd: 100.00% missing
+
+6. Statistical Summary Generation:
+   - Generated descriptive statistics for numerical columns
+
+Processing Statistics:
+Total Rows Processed: 786,363
+Total Columns Processed: 29
+Memory Usage: 403.43 MB

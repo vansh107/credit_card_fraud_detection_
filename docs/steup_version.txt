@@ -1,0 +1,1 @@
+python -m pip freeze | grep -E "black|dvc|dvc-gdrive|fastapi|flake8|joblib|numpy|pandas|python-dotenv|scikit-learn|uvicorn|xgboost|regex|tables|urllib3|seaborn" > requirements.txt

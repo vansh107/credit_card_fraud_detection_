@@ -1,0 +1,79 @@
+ADVANCED TRANSACTION ANALYSIS REPORT
+==================================================
+
+Timestamp: 2025-03-26 18:14:30
+--------------------------------------------------
+
+1. REVERSED TRANSACTIONS ANALYSIS
+------------------------------
+
+Total PURCHASE transactions: 745193
+Total REVERSAL transactions: 20303
+
+Reversed Transactions Statistics:
+- Total Reversed Transactions: 17768
+- Total Reversed Amount: $2,666,966.41
+- Average Reversed Amount: $150.10
+- Median Reversed Amount: $103.93
+
+Unlinked Reversal Statistics:
+- Unlinked Reversal Count: 2535
+- Unlinked Reversal Amount: $154,826.09
+
+Fraud Analysis in Reversed Transactions:
++-----------+---------+-----------------+---------+
+| isFraud   |   count |             sum |    mean |
++===========+=========+=================+=========+
+| False     |   17465 |     2.59367e+06 | 148.507 |
++-----------+---------+-----------------+---------+
+| True      |     303 | 73292.9         | 241.891 |
++-----------+---------+-----------------+---------+
+
+2. MULTI-SWIPE TRANSACTIONS ANALYSIS
+------------------------------
+
+Total PURCHASE transactions analyzed: 745193
+
+Multi-Swipe Statistics (Time Window: 5 minutes):
+- Total Multi-Swipe Transactions: 7470
+- Total Multi-Swipe Amount: $1,104,598.85
+- Average Multi-Swipe Amount: $147.87
+- Median Multi-Swipe Amount: $101.06
+
+Time Difference Analysis:
++-------+------------------------------+
+|       | Time Difference Statistics   |
++=======+==============================+
+| count | 7470                         |
++-------+------------------------------+
+| mean  | 0 days 00:01:31.108701472    |
++-------+------------------------------+
+| std   | 0 days 00:00:52.273250019    |
++-------+------------------------------+
+| min   | 0 days 00:00:01              |
++-------+------------------------------+
+| 25%   | 0 days 00:00:46              |
++-------+------------------------------+
+| 50%   | 0 days 00:01:31              |
++-------+------------------------------+
+| 75%   | 0 days 00:02:17              |
++-------+------------------------------+
+| max   | 0 days 00:04:36              |
++-------+------------------------------+
+
+Top Merchants with Multi-Swipe Transactions:
++-----------+---------+
+|           |   Count |
++===========+=========+
+| Uber      |     283 |
++-----------+---------+
+| Lyft      |     227 |
++-----------+---------+
+| apple.com |     191 |
++-----------+---------+
+| gap.com   |     179 |
++-----------+---------+
+| sears.com |     178 |
++-----------+---------+
+
+==================================================

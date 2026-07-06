@@ -1,0 +1,14 @@
+{
+    "total_rows": 786363,
+    "total_columns": 29,
+    "memory_usage": 403.42591381073,
+    "processing_timestamp": "2025-03-26 18:14:09",
+    "data_types_summary": {
+        "float64": 9,
+        "object": 7,
+        "int64": 6,
+        "datetime64[ns]": 4,
+        "bool": 3
+    },
+    "missing_values_summary": 4728625
+}

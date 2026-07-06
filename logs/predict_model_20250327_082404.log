@@ -1,0 +1,32 @@
+2025-03-27 08:24:04,886 - __main__ - INFO - Starting prediction pipeline
+2025-03-27 08:24:04,887 - __main__ - INFO - Best model from summary: GradientBoosting
+2025-03-27 08:24:04,887 - __main__ - INFO - Loading model from models/best_gb_model.pkl
+2025-03-27 08:24:05,020 - __main__ - INFO - Loaded GradientBoosting model
+2025-03-27 08:24:05,020 - __main__ - INFO - Loading saved balanced test set from data/evaluation/balanced_test_set.csv
+2025-03-27 08:24:05,041 - __main__ - INFO - Loaded balanced test set with shape: (4672, 20)
+2025-03-27 08:24:05,042 - __main__ - INFO - Class distribution in balanced test set: {0: 2336, 1: 2336}
+2025-03-27 08:24:05,042 - __main__ - INFO - Making predictions on 4672 samples
+2025-03-27 08:24:05,075 - __main__ - INFO - Evaluating predictions
+2025-03-27 08:24:05,083 - __main__ - INFO - Accuracy: 0.7697
+2025-03-27 08:24:05,084 - __main__ - INFO - Precision: 0.7381
+2025-03-27 08:24:05,084 - __main__ - INFO - Recall: 0.8360
+2025-03-27 08:24:05,084 - __main__ - INFO - F1-Score: 0.7840
+2025-03-27 08:24:05,084 - __main__ - INFO - AUC: 0.8438
+2025-03-27 08:24:05,084 - __main__ - INFO - Confusion Matrix:
+[[1643  693]
+ [ 383 1953]]
+2025-03-27 08:24:05,604 - __main__ - INFO - Completed evaluation on saved balanced test set
+2025-03-27 08:24:05,605 - __main__ - INFO - Balanced prediction metrics saved to reports/balanced_prediction_metrics.json
+2025-03-27 08:24:05,605 - __main__ - INFO - No test file provided, using processed data for demonstration
+2025-03-27 08:24:05,978 - __main__ - INFO - Making predictions on 74308 samples
+2025-03-27 08:24:06,442 - __main__ - INFO - Evaluating predictions
+2025-03-27 08:24:06,488 - __main__ - INFO - Accuracy: 0.7066
+2025-03-27 08:24:06,488 - __main__ - INFO - Precision: 0.0416
+2025-03-27 08:24:06,488 - __main__ - INFO - Recall: 0.8317
+2025-03-27 08:24:06,488 - __main__ - INFO - F1-Score: 0.0793
+2025-03-27 08:24:06,488 - __main__ - INFO - AUC: 0.8462
+2025-03-27 08:24:06,488 - __main__ - INFO - Confusion Matrix:
+[[51564 21615]
+ [  190   939]]
+2025-03-27 08:24:07,585 - __main__ - INFO - Predictions saved to data/predictions/fraud_predictions.csv
+2025-03-27 08:24:07,586 - __main__ - INFO - Prediction metrics saved to reports/prediction_metrics.json

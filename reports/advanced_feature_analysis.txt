@@ -1,0 +1,64 @@
+ADVANCED FEATURE PROCESSING REPORT
+==================================================
+
+Timestamp: 2025-03-26 18:14:37
+--------------------------------------------------
+
+
+1. SPECIAL TRANSACTIONS REMOVAL
+------------------------------
+Initial row count: 786,363
+Final row count: 743,081
+Removed rows: 43,282
+Removed percentage: 5.50%
+
+2. MISSING VALUES HANDLING
+------------------------------
+
+Initial Missing Values:
++---------------------+---------+--------------+
+| Column              |   Count | Percentage   |
++=====================+=========+==============+
+| acqCountry          |    4307 | 0.58%        |
++---------------------+---------+--------------+
+| merchantCountryCode |     689 | 0.09%        |
++---------------------+---------+--------------+
+| posEntryMode        |    3841 | 0.52%        |
++---------------------+---------+--------------+
+| posConditionCode    |     384 | 0.05%        |
++---------------------+---------+--------------+
+| transactionType     |     698 | 0.09%        |
++---------------------+---------+--------------+
+| echoBuffer          |  743081 | 100.00%      |
++---------------------+---------+--------------+
+| merchantCity        |  743081 | 100.00%      |
++---------------------+---------+--------------+
+| merchantState       |  743081 | 100.00%      |
++---------------------+---------+--------------+
+| merchantZip         |  743081 | 100.00%      |
++---------------------+---------+--------------+
+| posOnPremises       |  743081 | 100.00%      |
++---------------------+---------+--------------+
+| recurringAuthInd    |  743081 | 100.00%      |
++---------------------+---------+--------------+
+
+Remaining missing values: 0
+
+3. FEATURE DERIVATION
+------------------------------
+Created new feature: CVV_matched
+
+Derived Features:
+- CVV_matched: Binary indicator of CVV match
+
+Dropped 10 columns:
+- accountNumber
+- customerId
+- cardCVV
+- enteredCVV
+- cardLast4Digits
+- transactionDateTime
+- currentExpDate
+- accountOpenDate
+- dateOfLastAddressChange
+- availableMoney

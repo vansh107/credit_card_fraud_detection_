@@ -1,0 +1,103 @@
+stages:
+  extract_data:
+    cmd: python3 src/data/data_collection.py
+    deps:
+    - data/raw/zipped/transactions.zip
+    - src/data/data_collection.py
+    outs:
+    - data/raw/extracted/
+
+  data_processing:
+    cmd: python3 src/data/data_processing.py
+    deps:
+    - data/raw/extracted/transactions.txt
+    - src/data/data_processing.py
+    outs:
+    - data/inprogress/interim_transactions.csv
+    - data/inprogress/interim_transactions.h5
+    metrics:
+    - reports/data_processing_metrics.json:
+        cache: false
+    - reports/processing_summary.json:
+        cache: false
+    plots:
+    - reports/data_exploration.txt:
+        cache: false
+    - reports/preprocess_n_analysis.txt:
+        cache: false
+  
+  advanced_wrangling:
+    cmd: python3 src/data-wrangling-advance/adv_data_processing.py
+    deps:
+    - data/inprogress/interim_transactions.h5
+    - src/data-wrangling-advance/adv_data_processing.py
+    outs:
+    - data/processed/processed_transactions.csv
+    - data/processed/processed_transactions.h5
+    - reports/figures/transaction_distributions.png
+    metrics:
+    - reports/advanced_wrangling_metrics.json:
+        cache: false
+    - reports/advanced_wrangling_summary.json:
+        cache: false
+    plots:
+    - reports/advanced_data_exploration.txt:
+        cache: false
+    - reports/advanced_feature_analysis.txt:
+        cache: false
+
+  train_model:
+    cmd: python3 src/models/train_model.py
+    deps:
+    - data/processed/processed_transactions.h5
+    - src/models/train_model.py
+    outs:
+    - models/best_rf_model.pkl
+    - models/best_gb_model.pkl
+    - models/best_xgb_model.pkl
+    - data/evaluation/balanced_test_set.csv
+    - reports/figures/precision_recall_curve_RandomForest.png
+    - reports/figures/precision_recall_curve_GradientBoosting.png
+    - reports/figures/precision_recall_curve_XGBoost.png
+    - reports/figures/roc_curve_RandomForest.png
+    - reports/figures/roc_curve_GradientBoosting.png
+    - reports/figures/roc_curve_XGBoost.png
+    - reports/figures/confusion_matrix_RandomForest.png
+    - reports/figures/confusion_matrix_GradientBoosting.png
+    - reports/figures/confusion_matrix_XGBoost.png
+    metrics:
+    - reports/model_metrics.json:
+        cache: false
+    - reports/model_summary.json:
+        cache: false
+        
+  predict:
+    cmd: python3 src/models/predict_model.py
+    deps:
+    - models/best_rf_model.pkl
+    - models/best_gb_model.pkl
+    - models/best_xgb_model.pkl
+    - src/models/predict_model.py
+    - reports/model_summary.json
+    - data/evaluation/balanced_test_set.csv
+    outs:
+    - data/predictions/fraud_predictions.csv:
+        cache: false
+    - reports/figures/balanced_prediction/prediction_confusion_matrix.png:
+        cache: false
+    - reports/figures/balanced_prediction/prediction_roc_curve.png:
+        cache: false
+    - reports/figures/balanced_prediction/prediction_pr_curve.png:
+        cache: false
+    - reports/figures/prediction/prediction_confusion_matrix.png:
+        cache: false
+    - reports/figures/prediction/prediction_roc_curve.png:
+        cache: false
+    - reports/figures/prediction/prediction_pr_curve.png:
+        cache: false
+    metrics:
+    - reports/prediction_metrics.json:
+        cache: false
+    - reports/balanced_prediction_metrics.json:
+        cache: false
+

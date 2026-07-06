@@ -1,0 +1,46 @@
+# docker-compose.yml
+services:
+  mlops_pipeline:
+    build: .
+    volumes:
+      - .:/workspace
+      - .dvc/cache:/workspace/.dvc/cache
+      - ./config:/workspace/config:ro
+      - ./notebooks:/workspace/notebooks
+      - ./logs:/workspace/logs
+      - ./reports:/workspace/reports
+      - ./data:/workspace/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MPLCONFIGDIR=/tmp/matplotlib
+      - DVC_NO_ANALYTICS=1
+      # Over here try to set DVC_REMOTE_URL inside .env or pass here directly
+      - DVC_REMOTE_URL=${DVC_REMOTE_URL}
+      # Over here try to add path to your google drive credentials
+      - GOOGLE_APPLICATION_CREDENTIALS=/workspace/config/gdrive.json
+    command: >
+      bash -c "
+        if [ ! -f 'data/raw/zipped/transactions.zip' ]; then
+          dvc get https://github.com/CapitalOneRecruiting/DS transactions.zip -o data/raw/zipped/ &&
+          dvc add data/raw/zipped/transactions.zip;
+        fi &&
+        dvc dag &&
+        dvc repro &&
+        if ! dvc remote list | grep -q 'myremote'; then
+          dvc remote add -d myremote ${DVC_REMOTE_URL};
+        fi &&
+        dvc push
+      "
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  dvc_cache:

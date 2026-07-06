@@ -1,0 +1,149 @@
+{
+    "RandomForest": {
+        "training_metrics": {
+            "model_type": "RandomForest",
+            "avg_accuracy": 0.7055222602739726,
+            "avg_fraud_precision": 0.7089142440957071,
+            "avg_fraud_recall": 0.6975599315068493,
+            "avg_fraud_f1": 0.7031279793461438,
+            "avg_auc": 0.7055222602739726,
+            "f1_values": [
+                0.7069,
+                0.7109,
+                0.7029,
+                0.6924,
+                0.6975,
+                0.708,
+                0.7076,
+                0.7019,
+                0.7038,
+                0.6993
+            ],
+            "max_f1": 0.7109,
+            "best_params": {
+                "criterion": "entropy",
+                "max_depth": 9,
+                "n_estimators": 110
+            }
+        },
+        "balanced_test_metrics": {
+            "accuracy": 0.7170376712328768,
+            "precision": 0.7128463476070529,
+            "recall": 0.7268835616438356,
+            "f1_score": 0.7197965239508266,
+            "auc": 0.7894220450600488,
+            "confusion_matrix": [
+                [
+                    1652,
+                    684
+                ],
+                [
+                    638,
+                    1698
+                ]
+            ],
+            "model_name": "RandomForest"
+        }
+    },
+    "GradientBoosting": {
+        "training_metrics": {
+            "model_type": "GradientBoosting",
+            "avg_accuracy": 0.7080265410958904,
+            "avg_fraud_precision": 0.7088544953547726,
+            "avg_fraud_recall": 0.7062928082191781,
+            "avg_fraud_f1": 0.7075155056790932,
+            "avg_auc": 0.7080265410958904,
+            "f1_values": [
+                0.7099,
+                0.7104,
+                0.7095,
+                0.6984,
+                0.7193,
+                0.6945,
+                0.7067,
+                0.7125,
+                0.7053,
+                0.7087
+            ],
+            "max_f1": 0.7193,
+            "best_params": {
+                "learning_rate": 0.05,
+                "max_depth": 8,
+                "n_estimators": 180
+            }
+        },
+        "balanced_test_metrics": {
+            "accuracy": 0.7696917808219178,
+            "precision": 0.7380952380952381,
+            "recall": 0.8360445205479452,
+            "f1_score": 0.7840224809313528,
+            "auc": 0.8438327393448584,
+            "confusion_matrix": [
+                [
+                    1643,
+                    693
+                ],
+                [
+                    383,
+                    1953
+                ]
+            ],
+            "model_name": "GradientBoosting"
+        }
+    },
+    "XGBoost": {
+        "training_metrics": {
+            "model_type": "XGBoost",
+            "avg_accuracy": 0.7128638698630138,
+            "avg_fraud_precision": 0.7141237350019958,
+            "avg_fraud_recall": 0.7101883561643836,
+            "avg_fraud_f1": 0.7120569349147826,
+            "avg_auc": 0.7128638698630138,
+            "f1_values": [
+                0.7213,
+                0.7094,
+                0.718,
+                0.7094,
+                0.7128,
+                0.7117,
+                0.7096,
+                0.7176,
+                0.7055,
+                0.7052
+            ],
+            "max_f1": 0.7213,
+            "best_params": {
+                "reg_lambda": 3.1,
+                "reg_alpha": 3.7,
+                "n_estimators": 140,
+                "max_depth": 8,
+                "learning_rate": 0.05,
+                "gamma": 0,
+                "colsample_bytree": 0.8
+            }
+        },
+        "balanced_test_metrics": {
+            "accuracy": 0.747431506849315,
+            "precision": 0.7277383766745469,
+            "recall": 0.790667808219178,
+            "f1_score": 0.7578990562166599,
+            "auc": 0.8231337009171515,
+            "confusion_matrix": [
+                [
+                    1645,
+                    691
+                ],
+                [
+                    489,
+                    1847
+                ]
+            ],
+            "model_name": "XGBoost"
+        }
+    },
+    "best_model": {
+        "name": "GradientBoosting",
+        "f1_score": 0.7840224809313528,
+        "timestamp": "2025-03-27 07:55:58"
+    }
+}
